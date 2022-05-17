@@ -20,7 +20,7 @@ class GyartoComparator implements Comparator<Elelmiszer>{
     } 
 }
 
-public class Elelmiszer{
+public abstract class Elelmiszer{
     private String nev, gyarto;
     private LocalDate lejaratiDatum;
     
@@ -56,8 +56,4 @@ public class Elelmiszer{
     public static GyartoComparator gyartoRendezo(){
         return new GyartoComparator();
     }
-    
-    
-    
-    
 }
